@@ -6,7 +6,7 @@
 
 <title>Oren Consultoria</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
 
 <style>
 * { margin:0; padding:0; box-sizing:border-box; }
@@ -14,57 +14,82 @@
 body {
   font-family:'Inter', sans-serif;
   color:#1a1a1a;
-  background:#fff;
 }
 
 /* NAV */
 nav {
+  position:absolute;
+  width:100%;
   display:flex;
   justify-content:space-between;
   padding:30px 60px;
+  color:white;
+}
+
+nav a {
+  margin-left:25px;
+  text-decoration:none;
+  color:white;
+  font-size:14px;
 }
 
 .logo {
   font-family:'Playfair Display';
-  font-size:22px;
-}
-
-nav a {
-  margin-left:30px;
-  text-decoration:none;
-  color:#555;
-  font-size:14px;
+  font-size:24px;
 }
 
 /* HERO */
 .hero {
-  padding:120px 60px 80px;
-  max-width:900px;
+  height:100vh;
+  background:
+  linear-gradient(rgba(10,20,40,0.7), rgba(10,20,40,0.85)),
+  url('https://images.unsplash.com/photo-1552664730-d307ca884978');
+  background-size:cover;
+  background-position:center;
+
+  display:flex;
+  align-items:center;
+  padding:0 60px;
+  color:white;
+}
+
+.hero-content {
+  max-width:700px;
 }
 
 .hero h1 {
   font-family:'Playfair Display';
-  font-size:48px;
+  font-size:56px;
   margin-bottom:20px;
 }
 
 .hero p {
-  font-size:18px;
-  color:#555;
-  line-height:1.6;
+  font-size:20px;
+  color:#ddd;
+  margin-bottom:30px;
+}
+
+.btn {
+  padding:14px 30px;
+  background:#c8a96a;
+  border:none;
+  color:white;
+  font-weight:500;
+  cursor:pointer;
+  border-radius:4px;
 }
 
 /* SECTION */
 .section {
-  padding:80px 60px;
-  max-width:1100px;
+  padding:100px 60px;
+  max-width:1200px;
+  margin:auto;
 }
 
 .section h2 {
-  font-size:13px;
-  letter-spacing:2px;
-  color:#999;
-  margin-bottom:30px;
+  font-family:'Playfair Display';
+  font-size:32px;
+  margin-bottom:40px;
 }
 
 /* GRID */
@@ -74,55 +99,51 @@ nav a {
   gap:40px;
 }
 
-/* CARD */
+.card {
+  background:white;
+  padding:30px;
+  border-radius:10px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.08);
+  transition:0.3s;
+}
+
+.card:hover {
+  transform:translateY(-5px);
+}
+
 .card h3 {
-  font-size:18px;
   margin-bottom:10px;
 }
 
 .card p {
   color:#666;
   font-size:15px;
-  line-height:1.5;
-}
-
-/* DIVIDER */
-.divider {
-  height:1px;
-  background:#eee;
-  margin:60px 0;
 }
 
 /* CTA */
 .cta {
+  background:#0a2540;
+  color:white;
   padding:100px 60px;
-  text-align:left;
-  max-width:900px;
 }
 
 .cta h2 {
   font-family:'Playfair Display';
-  font-size:36px;
+  font-size:34px;
   margin-bottom:20px;
 }
 
 .cta p {
-  color:#555;
-  margin-bottom:30px;
-}
-
-.cta a {
-  text-decoration:none;
-  border-bottom:1px solid #000;
-  padding-bottom:3px;
+  color:#ccc;
+  margin-bottom:25px;
 }
 
 /* FOOTER */
 footer {
-  padding:40px 60px;
-  border-top:1px solid #eee;
-  color:#777;
-  font-size:14px;
+  background:#020c1b;
+  color:#aaa;
+  text-align:center;
+  padding:20px;
 }
 </style>
 </head>
@@ -138,61 +159,57 @@ footer {
 </nav>
 
 <section class="hero">
-  <h1>Estrutura, estratégia e governança para organizações que desejam crescer com consistência.</h1>
-  <p>
-    A Oren Consultoria atua na organização e desenvolvimento de empresas,
-    estruturando processos, direcionando decisões e construindo bases sólidas
-    para crescimento sustentável e responsável.
-  </p>
+  <div class="hero-content">
+    <h1>Estrutura e estratégia para empresas que querem crescer com consistência</h1>
+    <p>
+      Organizamos processos, definimos diretrizes e estruturamos negócios para crescimento sólido, com governança e visão de longo prazo.
+    </p>
+    <button class="btn">Fale conosco</button>
+  </div>
 </section>
 
-<div class="divider"></div>
-
 <section class="section">
-  <h2>ATUAÇÃO</h2>
+  <h2>Atuação</h2>
 
   <div class="grid">
     <div class="card">
       <h3>Diagnóstico Organizacional</h3>
-      <p>Análise completa da estrutura, processos e posicionamento da empresa.</p>
+      <p>Análise completa da estrutura e funcionamento da empresa.</p>
     </div>
 
     <div class="card">
       <h3>Estruturação Estratégica</h3>
-      <p>Definição de diretrizes, organização interna e planejamento de crescimento.</p>
+      <p>Organização interna e planejamento de crescimento.</p>
     </div>
 
     <div class="card">
       <h3>Acompanhamento Mensal</h3>
-      <p>Suporte contínuo para evolução, ajustes e tomada de decisão.</p>
+      <p>Suporte contínuo para evolução e tomada de decisão.</p>
     </div>
 
     <div class="card">
       <h3>Governança e Processos</h3>
-      <p>Criação de políticas internas e organização de fluxos operacionais.</p>
+      <p>Criação de políticas internas e organização operacional.</p>
     </div>
 
     <div class="card">
       <h3>Diretrizes de Inclusão</h3>
-      <p>Implementação de práticas alinhadas à inclusão e responsabilidade social.</p>
+      <p>Aplicação de práticas responsáveis e inclusivas.</p>
     </div>
 
     <div class="card">
       <h3>Imagem Institucional ESG</h3>
-      <p>Posicionamento estratégico com base em responsabilidade e credibilidade.</p>
+      <p>Fortalecimento da marca com credibilidade e propósito.</p>
     </div>
   </div>
 </section>
 
-<div class="divider"></div>
-
 <section class="cta">
-  <h2>Para empresas em construção ou em expansão.</h2>
+  <h2>Para empresas em construção ou expansão</h2>
   <p>
-    Atuamos ao lado de organizações que estão iniciando ou que já existem,
-    mas precisam de estrutura, clareza e direcionamento para crescer com segurança.
+    Atuamos ao lado de organizações que precisam de estrutura, clareza e direcionamento para crescer com segurança.
   </p>
-  <a href="#">Entrar em contato</a>
+  <button class="btn">Entrar em contato</button>
 </section>
 
 <footer>
