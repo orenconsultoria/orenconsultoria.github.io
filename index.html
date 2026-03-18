@@ -1,1 +1,129 @@
 
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Oren Consultoria</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+
+body {
+  font-family: 'Inter', sans-serif;
+  color:#1a1a1a;
+}
+
+/* HERO */
+.hero {
+  height:100vh;
+  background: linear-gradient(rgba(10,37,64,0.85), rgba(10,37,64,0.9)),
+  url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d');
+  background-size:cover;
+  display:flex;
+  align-items:center;
+  padding:0 60px;
+  color:white;
+}
+
+.hero-content {
+  max-width:700px;
+}
+
+.hero h1 {
+  font-family:'Playfair Display';
+  font-size:56px;
+  margin-bottom:20px;
+}
+
+.hero p {
+  font-size:20px;
+  color:#ddd;
+  margin-bottom:30px;
+}
+
+.btn {
+  background:#d4a373;
+  padding:15px 35px;
+  color:white;
+  border:none;
+  border-radius:6px;
+  font-weight:bold;
+  cursor:pointer;
+}
+
+/* SEÇÃO */
+.section {
+  padding:80px 60px;
+  text-align:center;
+}
+
+.section h2 {
+  font-family:'Playfair Display';
+  font-size:36px;
+  margin-bottom:20px;
+}
+
+.cards {
+  display:flex;
+  gap:30px;
+  margin-top:40px;
+  flex-wrap:wrap;
+}
+
+.card {
+  flex:1 1 300px;
+  padding:40px;
+  border-radius:12px;
+  background:white;
+  box-shadow:0 10px 25px rgba(0,0,0,0.05);
+}
+
+footer {
+  background:#0a2540;
+  color:white;
+  text-align:center;
+  padding:20px;
+}
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+  <div class="hero-content">
+    <h1>Oren Consultoria</h1>
+    <p>Conectando estratégia, propósito e crescimento sustentável para empresas e profissionais.</p>
+    <button class="btn">Fale conosco</button>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Soluções que geram impacto real</h2>
+
+  <div class="cards">
+    <div class="card">
+      <h3>Empresas</h3>
+      <p>Estruturação, governança e conexão com talentos estratégicos.</p>
+    </div>
+
+    <div class="card">
+      <h3>Profissionais</h3>
+      <p>Desenvolvimento e acesso a oportunidades alinhadas ao seu potencial.</p>
+    </div>
+
+    <div class="card">
+      <h3>Projetos ESG</h3>
+      <p>Inclusão, impacto social e crescimento com responsabilidade.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2026 Oren Consultoria
+</footer>
+
+</body>
+</html>
