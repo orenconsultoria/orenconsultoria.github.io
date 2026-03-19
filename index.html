@@ -1,35 +1,231 @@
-<section class="section">
-  <div class="section-title">CENÁRIOS OBSERVADOS</div>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <h2 style="font-family:'Playfair Display'; font-size:34px; margin-bottom:50px; max-width:700px;">
-    Alguns sinais indicam quando a empresa precisa evoluir sua estrutura.
-  </h2>
+<title>Oren Consultoria</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+  font-family:'Inter',sans-serif;
+  background:#f8f8f6;
+  color:#1a1a1a;
+}
+
+/* NAV */
+nav{
+  display:flex;
+  justify-content:space-between;
+  padding:30px 80px;
+}
+
+.logo{
+  font-family:'Playfair Display';
+  font-size:22px;
+}
+
+nav a{
+  margin-left:30px;
+  font-size:14px;
+  color:#555;
+  text-decoration:none;
+}
+
+/* HERO */
+.hero{
+  display:grid;
+  grid-template-columns:1.2fr 1fr;
+  min-height:85vh;
+}
+
+.hero-text{
+  padding:120px 80px;
+}
+
+.hero-text h1{
+  font-family:'Playfair Display';
+  font-size:52px;
+  line-height:1.2;
+  margin-bottom:25px;
+}
+
+.hero-text p{
+  font-size:17px;
+  color:#555;
+  max-width:500px;
+  margin-bottom:30px;
+}
+
+.cta{
+  background:#f97316;
+  color:white;
+  padding:14px 26px;
+  border-radius:6px;
+  text-decoration:none;
+  font-size:14px;
+}
+
+.hero-image{
+  background:url('https://images.unsplash.com/photo-1507679799987-c73779587ccf');
+  background-size:cover;
+}
+
+/* SECTION */
+.section{
+  padding:100px 80px;
+}
+
+.section-title{
+  font-size:12px;
+  letter-spacing:2px;
+  color:#999;
+  margin-bottom:50px;
+}
+
+/* GRID */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:40px;
+}
+
+.card{
+  padding:30px;
+  border-radius:10px;
+  background:white;
+  box-shadow:0 8px 20px rgba(0,0,0,0.04);
+  transition:.3s;
+}
+
+.card:hover{
+  transform:translateY(-4px);
+}
+
+.card h3{
+  font-size:18px;
+  margin-bottom:10px;
+}
+
+.card p{
+  color:#666;
+  font-size:14px;
+  line-height:1.6;
+}
+
+/* BLOCO DE TEXTO */
+.statement{
+  padding:120px 80px;
+  background:#1a1a1a;
+  color:white;
+}
+
+.statement h2{
+  font-family:'Playfair Display';
+  font-size:34px;
+  max-width:700px;
+  line-height:1.4;
+}
+
+/* FOOTER */
+footer{
+  padding:40px 80px;
+  font-size:13px;
+  color:#777;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <div class="logo">Oren</div>
+  <div>
+    <a href="#">Início</a>
+    <a href="#">Sobre</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-text">
+    <h1>Empresas crescem com mais consistência quando existe estrutura.</h1>
+    <p>
+      A Oren atua organizando processos, pessoas e diretrizes estratégicas,
+      criando bases sólidas para um crescimento sustentável.
+    </p>
+    <a href="#" class="cta">Agendar conversa</a>
+  </div>
+  <div class="hero-image"></div>
+</section>
+
+<!-- CENÁRIOS -->
+<section class="section">
+
+  <div class="section-title">CENÁRIOS OBSERVADOS</div>
 
   <div class="grid">
 
     <div class="card">
       <h3>Clareza operacional em desenvolvimento</h3>
-      <p>
-        Funções e responsabilidades ainda não estão totalmente consolidadas,
-        o que pode impactar a fluidez das entregas.
-      </p>
+      <p>Funções e responsabilidades ainda não estão totalmente definidas.</p>
     </div>
 
     <div class="card">
-      <h3>Alta dependência da liderança</h3>
-      <p>
-        Parte relevante das decisões e execuções ainda passa diretamente
-        pelos gestores.
-      </p>
+      <h3>Dependência da liderança</h3>
+      <p>Parte das decisões e execuções ainda passa pelos gestores.</p>
     </div>
 
     <div class="card">
-      <h3>Execução abaixo do potencial</h3>
-      <p>
-        Existe direcionamento estratégico, mas nem sempre ele se traduz
-        em resultados consistentes.
-      </p>
+      <h3>Execução inconsistente</h3>
+      <p>O planejamento existe, mas nem sempre se traduz em resultado.</p>
     </div>
 
   </div>
+
 </section>
+
+<!-- ATUAÇÃO -->
+<section class="section">
+
+  <div class="section-title">ATUAÇÃO</div>
+
+  <div class="grid">
+
+    <div class="card">
+      <h3>Diagnóstico Organizacional</h3>
+      <p>Análise da estrutura e funcionamento da empresa.</p>
+    </div>
+
+    <div class="card">
+      <h3>Estruturação Estratégica</h3>
+      <p>Organização interna com foco em crescimento sustentável.</p>
+    </div>
+
+    <div class="card">
+      <h3>Acompanhamento</h3>
+      <p>Direcionamento contínuo para decisões mais seguras.</p>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- FRASE -->
+<section class="statement">
+  <h2>
+    Empresas estruturadas crescem com mais consistência
+    e tomam decisões com maior segurança.
+  </h2>
+</section>
+
+<footer>
+  © 2026 Oren Consultoria
+</footer>
+
+</body>
+</html>
