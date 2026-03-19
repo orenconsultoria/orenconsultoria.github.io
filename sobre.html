@@ -4,92 +4,178 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Sobre | Oren Consultoria</title>
+<title>Oren Consultoria</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 
 <style>
-* { margin:0; padding:0; box-sizing:border-box; }
+*{margin:0;padding:0;box-sizing:border-box;}
 
-body {
-  font-family:'Inter', sans-serif;
+body{
+  font-family:'Inter',sans-serif;
+  background:#0f0f0f;
   color:#1a1a1a;
-  background:#fff;
 }
 
-/* NAV */
-nav {
+nav{
   display:flex;
   justify-content:space-between;
-  align-items:center;
-  padding:25px 60px;
+  padding:30px 80px;
+  background:white;
 }
 
-.logo {
+.logo{
   font-family:'Playfair Display';
   font-size:22px;
 }
 
-nav a {
+nav a{
   margin-left:30px;
-  text-decoration:none;
-  color:#444;
-  font-size:14px;
-}
-
-/* HERO */
-.hero {
-  padding:100px 60px 60px;
-  max-width:900px;
-}
-
-.hero h1 {
-  font-family:'Playfair Display';
-  font-size:42px;
-  margin-bottom:20px;
-}
-
-.hero p {
   color:#555;
+  text-decoration:none;
+}
+
+.hero{
+  display:grid;
+  grid-template-columns:1.2fr 1fr;
+  min-height:90vh;
+  background:linear-gradient(120deg,#111,#1a1a1a);
+  color:white;
+}
+
+.hero-text{
+  padding:120px 80px;
+}
+
+.hero-text h1{
+  font-family:'Playfair Display';
+  font-size:58px;
+  line-height:1.2;
+  margin-bottom:25px;
+}
+
+.hero-text p{
   font-size:18px;
-  line-height:1.6;
+  color:#ccc;
+  margin-bottom:30px;
+  max-width:500px;
 }
 
-/* SECTION */
-.section {
-  padding:0 60px 80px;
-  max-width:900px;
+.cta{
+  background:#f97316;
+  padding:16px 30px;
+  border-radius:8px;
+  color:white;
+  text-decoration:none;
+  font-weight:500;
 }
 
-.section h2 {
-  font-size:14px;
+.hero-image{
+  background:url('https://images.unsplash.com/photo-1507679799987-c73779587ccf');
+  background-size:cover;
+}
+
+/* SEÇÕES */
+.section{
+  padding:120px 80px;
+  background:white;
+}
+
+.dark{
+  background:#111;
+  color:white;
+}
+
+.section-title{
+  font-size:12px;
   letter-spacing:2px;
-  color:#999;
+  margin-bottom:50px;
+  opacity:.6;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:30px;
+}
+
+.card{
+  padding:30px;
+  border-radius:12px;
+  background:#fff;
+  box-shadow:0 15px 40px rgba(0,0,0,0.08);
+  transition:.3s;
+}
+
+.card:hover{
+  transform:translateY(-6px);
+}
+
+.dark .card{
+  background:#1a1a1a;
+  color:white;
+}
+
+.card p{
+  color:#666;
+}
+
+.dark .card p{
+  color:#bbb;
+}
+
+/* SOBRE */
+.sobre{
+  padding:140px 80px;
+  background:#f5f5f5;
+}
+
+.sobre h2{
+  font-family:'Playfair Display';
+  font-size:34px;
   margin-bottom:20px;
 }
 
-.section p {
-  color:#444;
-  line-height:1.7;
-  margin-bottom:20px;
+.sobre p{
+  max-width:700px;
+  margin-bottom:25px;
+  color:#555;
 }
 
-/* DIVIDER */
-.divider {
-  height:1px;
-  background:#eee;
-  margin:60px 0;
+/* FRASE */
+.statement{
+  padding:140px 80px;
+  background:linear-gradient(120deg,#f97316,#ea580c);
+  color:white;
+  text-align:center;
+}
+
+.statement h2{
+  font-family:'Playfair Display';
+  font-size:40px;
+  max-width:800px;
+  margin:auto;
+}
+
+/* CTA FINAL */
+.cta-final{
+  padding:120px 80px;
+  background:white;
+  text-align:center;
+}
+
+.cta-final h2{
+  font-size:36px;
+  margin-bottom:30px;
 }
 
 /* FOOTER */
-footer {
-  padding:40px 60px;
-  border-top:1px solid #eee;
-  color:#777;
-  font-size:14px;
+footer{
+  padding:40px 80px;
+  color:#aaa;
+  background:#0f0f0f;
 }
 </style>
-
 </head>
 
 <body>
@@ -97,48 +183,119 @@ footer {
 <nav>
   <div class="logo">Oren</div>
   <div>
-    <a href="index.html">Início</a>
-    <a href="sobre.html">Sobre</a>
+    <a href="#">Início</a>
+    <a href="#">Sobre</a>
   </div>
 </nav>
 
 <section class="hero">
-  <h1>Sobre a Oren</h1>
-  <p>
-    A Oren Consultoria nasce com o propósito de estruturar, orientar e conectar
-    empresas e profissionais em direção a um crescimento consistente e sustentável.
-  </p>
+  <div class="hero-text">
+    <h1>Empresas não travam por falta de estratégia.<br>Travam por falta de execução.</h1>
+    <p>A Oren estrutura processos, pessoas e direção para destravar crescimento consistente.</p>
+    <a href="#" class="cta">Agendar conversa</a>
+  </div>
+  <div class="hero-image"></div>
 </section>
 
-<div class="divider"></div>
-
+<!-- PROBLEMAS -->
 <section class="section">
-  <h2>POSICIONAMENTO</h2>
-  <p>
-    Atuamos na organização estratégica de negócios e no desenvolvimento profissional,
-    com foco em clareza, direcionamento e tomada de decisão consciente.
-  </p>
-
-  <p>
-    Nosso trabalho não se baseia apenas em crescimento, mas em construção sólida,
-    respeitando contexto, capacidade e visão de longo prazo.
-  </p>
+  <div class="section-title">CENÁRIOS COMUNS</div>
+  <div class="grid">
+    <div class="card">
+      <h3>Falta de clareza na equipe</h3>
+      <p>Funções e responsabilidades não estão totalmente definidas, impactando a performance.</p>
+    </div>
+    <div class="card">
+      <h3>Centralização excessiva</h3>
+      <p>Decisões e execução ainda dependem fortemente da liderança.</p>
+    </div>
+    <div class="card">
+      <h3>Dificuldade na execução</h3>
+      <p>O planejamento existe, mas nem sempre se traduz em resultados consistentes.</p>
+    </div>
+  </div>
 </section>
 
-<section class="section">
-  <h2>PROPÓSITO</h2>
-  <p>
-    Conectar oportunidades, desenvolver estruturas e promover impacto positivo
-    por meio de uma atuação responsável e estratégica.
-  </p>
+<!-- SERVIÇOS -->
+<section class="section dark">
+  <div class="section-title">ATUAÇÃO</div>
+  <div class="grid">
+    <div class="card">
+      <h3>Diagnóstico Organizacional</h3>
+      <p>Análise profunda da estrutura e funcionamento da empresa.</p>
+    </div>
+    <div class="card">
+      <h3>Estruturação Estratégica</h3>
+      <p>Organização interna para crescimento sustentável.</p>
+    </div>
+    <div class="card">
+      <h3>Acompanhamento</h3>
+      <p>Direcionamento contínuo para decisões mais seguras.</p>
+    </div>
+  </div>
 </section>
 
+<!-- MÉTODO -->
 <section class="section">
-  <h2>VISÃO</h2>
+  <div class="section-title">MÉTODO</div>
+  <div class="grid">
+    <div class="card">
+      <h3>Estratégia</h3>
+      <p>Direção clara baseada em decisões estruturadas.</p>
+    </div>
+    <div class="card">
+      <h3>Pessoas</h3>
+      <p>Alinhamento do time para performance real.</p>
+    </div>
+    <div class="card">
+      <h3>Execução</h3>
+      <p>Transformação de planejamento em resultado.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SOBRE -->
+<section class="sobre">
+
+  <h2>Por que a Oren existe</h2>
   <p>
-    Ser referência na organização e desenvolvimento de empresas e profissionais,
-    contribuindo para um mercado mais equilibrado, inclusivo e sustentável.
+    A maioria das empresas não trava por falta de mercado ou capacidade,
+    mas por ausência de estrutura.
   </p>
+
+  <p>
+    Processos pouco definidos, decisões centralizadas e falta de clareza
+    impedem o crescimento consistente.
+  </p>
+
+  <h2>Como atuamos</h2>
+  <p>
+    A Oren atua na base das organizações, estruturando estratégia,
+    pessoas e execução para que o crescimento aconteça com consistência.
+  </p>
+
+  <p>
+    Mais do que planejamento, nosso foco está na implementação prática
+    e na geração de resultado.
+  </p>
+
+  <h2>Objetivo</h2>
+  <p>
+    Estruturar empresas para que cresçam com clareza,
+    consistência e independência.
+  </p>
+
+</section>
+
+<!-- FRASE -->
+<section class="statement">
+  <h2>Empresas estruturadas crescem com consistência. As outras travam.</h2>
+</section>
+
+<!-- CTA -->
+<section class="cta-final">
+  <h2>Pronto para destravar sua empresa?</h2>
+  <a href="#" class="cta">Agendar conversa</a>
 </section>
 
 <footer>
