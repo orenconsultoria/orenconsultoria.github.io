@@ -17,7 +17,6 @@ body{
   color:#1a1a1a;
 }
 
-/* NAV */
 nav{
   display:flex;
   justify-content:space-between;
@@ -36,7 +35,6 @@ nav a{
   text-decoration:none;
 }
 
-/* HERO */
 .hero{
   display:grid;
   grid-template-columns:1.2fr 1fr;
@@ -72,7 +70,6 @@ nav a{
   font-weight:500;
 }
 
-/* ✅ IMAGEM ALTERADA AQUI */
 .hero-image{
   background:url('https://images.unsplash.com/photo-1552664730-d307ca884978');
   background-size:cover;
@@ -97,7 +94,6 @@ nav a{
   opacity:.6;
 }
 
-/* GRID */
 .grid{
   display:grid;
   grid-template-columns:repeat(3,1fr);
@@ -121,17 +117,30 @@ nav a{
   color:white;
 }
 
-.card h3{
-  margin-bottom:10px;
-}
-
 .card p{
-  font-size:14px;
   color:#666;
 }
 
 .dark .card p{
   color:#bbb;
+}
+
+/* SOBRE */
+.sobre{
+  padding:140px 80px;
+  background:#f5f5f5;
+}
+
+.sobre h2{
+  font-family:'Playfair Display';
+  font-size:34px;
+  margin-bottom:20px;
+}
+
+.sobre p{
+  max-width:700px;
+  margin-bottom:25px;
+  color:#555;
 }
 
 /* FRASE */
@@ -175,77 +184,73 @@ footer{
 <nav>
   <div class="logo">Oren</div>
   <div>
-    <a href="#">Início</a>
-    <a href="#">Sobre</a>
+    <a href="index.html">Início</a>
+    <a href="sobre.html">Sobre</a>
   </div>
 </nav>
 
 <section class="hero">
   <div class="hero-text">
     <h1>Empresas não travam por falta de estratégia.<br>Travam por falta de execução.</h1>
-    <p>A Oren organiza processos, pessoas e direção para destravar crescimento real.</p>
+    <p>A Oren estrutura processos, pessoas e direção para destravar crescimento consistente.</p>
     <a href="#" class="cta">Agendar conversa</a>
   </div>
   <div class="hero-image"></div>
 </section>
 
-<!-- DOR -->
+<!-- PROBLEMAS -->
 <section class="section">
-  <div class="section-title">PROBLEMAS COMUNS</div>
+  <div class="section-title">CENÁRIOS COMUNS</div>
   <div class="grid">
-
-    <!-- ✅ TEXTO ALTERADO AQUI -->
     <div class="card">
-      <h3>Clareza operacional em desenvolvimento</h3>
-      <p>Funções e responsabilidades ainda não estão totalmente definidas.</p>
+      <h3>Falta de clareza na equipe</h3>
+      <p>Funções e responsabilidades não estão totalmente definidas, impactando a performance.</p>
     </div>
-
     <div class="card">
-      <h3>Dono sobrecarregado</h3>
-      <p>Tudo depende de você para acontecer.</p>
+      <h3>Centralização excessiva</h3>
+      <p>Decisões e execução ainda dependem fortemente da liderança.</p>
     </div>
-
     <div class="card">
-      <h3>Falta de execução</h3>
-      <p>Planejamento existe, mas não vira resultado.</p>
+      <h3>Dificuldade na execução</h3>
+      <p>O planejamento existe, mas nem sempre se traduz em resultados consistentes.</p>
     </div>
   </div>
 </section>
 
 <!-- SERVIÇOS -->
 <section class="section dark">
-  <div class="section-title">O QUE FAZEMOS</div>
+  <div class="section-title">ATUAÇÃO</div>
   <div class="grid">
     <div class="card">
-      <h3>Diagnóstico</h3>
-      <p>Análise profunda da estrutura da empresa.</p>
+      <h3>Diagnóstico Organizacional</h3>
+      <p>Análise profunda da estrutura e funcionamento da empresa.</p>
     </div>
     <div class="card">
-      <h3>Estruturação</h3>
-      <p>Organização estratégica para crescimento sustentável.</p>
+      <h3>Estruturação Estratégica</h3>
+      <p>Organização interna para crescimento sustentável.</p>
     </div>
     <div class="card">
       <h3>Acompanhamento</h3>
-      <p>Direção contínua para decisões mais assertivas.</p>
+      <p>Direcionamento contínuo para decisões mais seguras.</p>
     </div>
   </div>
 </section>
 
 <!-- MÉTODO -->
 <section class="section">
-  <div class="section-title">NOSSO MÉTODO</div>
+  <div class="section-title">MÉTODO</div>
   <div class="grid">
     <div class="card">
       <h3>Estratégia</h3>
-      <p>Definimos direção clara para crescimento.</p>
+      <p>Direção clara baseada em decisões estruturadas.</p>
     </div>
     <div class="card">
       <h3>Pessoas</h3>
-      <p>Alinhamos e organizamos seu time.</p>
+      <p>Alinhamento do time para performance real.</p>
     </div>
     <div class="card">
       <h3>Execução</h3>
-      <p>Transformamos planejamento em resultado.</p>
+      <p>Transformação de planejamento em resultado.</p>
     </div>
   </div>
 </section>
