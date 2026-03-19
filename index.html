@@ -6,178 +6,164 @@
 
 <title>Oren Consultoria</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 
 <style>
-* { margin:0; padding:0; box-sizing:border-box; }
+*{margin:0;padding:0;box-sizing:border-box;}
 
-body {
-  font-family:'Inter', sans-serif;
-  background:#f8f8f6;
+body{
+  font-family:'Inter',sans-serif;
+  background:#0f0f0f;
   color:#1a1a1a;
 }
 
 /* NAV */
-nav {
+nav{
   display:flex;
   justify-content:space-between;
   padding:30px 80px;
+  background:white;
 }
 
-.logo {
+.logo{
   font-family:'Playfair Display';
   font-size:22px;
 }
 
-nav a {
+nav a{
   margin-left:30px;
-  font-size:14px;
   color:#555;
   text-decoration:none;
 }
 
 /* HERO */
-.hero {
+.hero{
   display:grid;
   grid-template-columns:1.2fr 1fr;
   min-height:90vh;
+  background:linear-gradient(120deg,#111,#1a1a1a);
+  color:white;
 }
 
-.hero-text {
+.hero-text{
   padding:120px 80px;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
 }
 
-.hero-text h1 {
+.hero-text h1{
   font-family:'Playfair Display';
-  font-size:56px;
+  font-size:58px;
   line-height:1.2;
   margin-bottom:25px;
 }
 
-.hero-text p {
+.hero-text p{
   font-size:18px;
-  color:#555;
-  max-width:520px;
+  color:#ccc;
   margin-bottom:30px;
+  max-width:500px;
 }
 
-.cta {
+.cta{
   background:#f97316;
-  color:white;
-  padding:16px 28px;
+  padding:16px 30px;
   border-radius:8px;
+  color:white;
   text-decoration:none;
-  font-size:14px;
-  width:max-content;
+  font-weight:500;
 }
 
-.hero-image {
+.hero-image{
   background:url('https://images.unsplash.com/photo-1507679799987-c73779587ccf');
   background-size:cover;
-  background-position:center;
 }
 
-/* SECTION */
-.section {
+/* SEÇÕES */
+.section{
   padding:120px 80px;
+  background:white;
 }
 
-.section-title {
+.dark{
+  background:#111;
+  color:white;
+}
+
+.section-title{
   font-size:12px;
   letter-spacing:2px;
-  color:#999;
-  margin-bottom:60px;
+  margin-bottom:50px;
+  opacity:.6;
 }
 
 /* GRID */
-.grid {
+.grid{
   display:grid;
   grid-template-columns:repeat(3,1fr);
-  gap:40px;
+  gap:30px;
 }
 
-.card {
-  background:white;
+.card{
   padding:30px;
   border-radius:12px;
-  box-shadow:0 10px 25px rgba(0,0,0,0.04);
-  transition:0.3s;
+  background:#fff;
+  box-shadow:0 15px 40px rgba(0,0,0,0.08);
+  transition:.3s;
 }
 
-.card:hover {
-  transform:translateY(-5px);
+.card:hover{
+  transform:translateY(-6px);
 }
 
-.card h3 {
-  font-size:18px;
+.dark .card{
+  background:#1a1a1a;
+  color:white;
+}
+
+.card h3{
   margin-bottom:10px;
 }
 
-.card p {
-  color:#666;
+.card p{
   font-size:14px;
-  line-height:1.6;
+  color:#666;
 }
 
-/* DOR */
-.problem {
-  background:#ffffff;
-  padding:120px 80px;
+.dark .card p{
+  color:#bbb;
 }
 
-.problem h2 {
-  font-family:'Playfair Display';
-  font-size:36px;
-  margin-bottom:60px;
-}
-
-/* PILARES */
-.pilares {
-  padding:120px 80px;
-}
-
-.pilares-grid {
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:40px;
-}
-
-/* STATEMENT */
-.statement {
+/* FRASE */
+.statement{
   padding:140px 80px;
-  background:#1a1a1a;
+  background:linear-gradient(120deg,#f97316,#ea580c);
   color:white;
   text-align:center;
 }
 
-.statement h2 {
+.statement h2{
   font-family:'Playfair Display';
-  font-size:38px;
-  max-width:700px;
+  font-size:40px;
+  max-width:800px;
   margin:auto;
-  line-height:1.4;
 }
 
 /* CTA FINAL */
-.cta-final {
+.cta-final{
   padding:120px 80px;
+  background:white;
   text-align:center;
 }
 
-.cta-final h2 {
-  font-family:'Playfair Display';
+.cta-final h2{
   font-size:36px;
   margin-bottom:30px;
 }
 
 /* FOOTER */
-footer {
+footer{
   padding:40px 80px;
-  font-size:13px;
-  color:#777;
+  color:#aaa;
+  background:#0f0f0f;
 }
 </style>
 </head>
@@ -193,78 +179,79 @@ footer {
 </nav>
 
 <section class="hero">
-
   <div class="hero-text">
     <h1>Empresas não travam por falta de estratégia.<br>Travam por falta de execução.</h1>
-    <p>
-      A Oren estrutura processos, pessoas e direção para empresas crescerem com consistência.
-    </p>
+    <p>A Oren organiza processos, pessoas e direção para destravar crescimento real.</p>
     <a href="#" class="cta">Agendar conversa</a>
   </div>
-
   <div class="hero-image"></div>
-
 </section>
 
 <!-- DOR -->
-<section class="problem">
-  <h2>Se você sente que sua empresa não evolui, geralmente é por isso:</h2>
-
+<section class="section">
+  <div class="section-title">PROBLEMAS COMUNS</div>
   <div class="grid">
     <div class="card">
-      <h3>O time não entrega</h3>
-      <p>Falta alinhamento, clareza e responsabilidade nas funções.</p>
+      <h3>Equipe desorganizada</h3>
+      <p>Falta clareza nas funções e responsabilidades.</p>
     </div>
-
     <div class="card">
-      <h3>Tudo depende de você</h3>
-      <p>O negócio não anda sem sua presença direta.</p>
+      <h3>Dono sobrecarregado</h3>
+      <p>Tudo depende de você para acontecer.</p>
     </div>
-
     <div class="card">
-      <h3>Estratégia não sai do papel</h3>
-      <p>Planejamento existe, mas execução não acontece.</p>
+      <h3>Falta de execução</h3>
+      <p>Planejamento existe, mas não vira resultado.</p>
     </div>
   </div>
 </section>
 
-<!-- PILARES -->
-<section class="pilares">
+<!-- SERVIÇOS -->
+<section class="section dark">
+  <div class="section-title">O QUE FAZEMOS</div>
+  <div class="grid">
+    <div class="card">
+      <h3>Diagnóstico</h3>
+      <p>Análise profunda da estrutura da empresa.</p>
+    </div>
+    <div class="card">
+      <h3>Estruturação</h3>
+      <p>Organização estratégica para crescimento sustentável.</p>
+    </div>
+    <div class="card">
+      <h3>Acompanhamento</h3>
+      <p>Direção contínua para decisões mais assertivas.</p>
+    </div>
+  </div>
+</section>
 
-  <div class="section-title">COMO ATUAMOS</div>
-
-  <div class="pilares-grid">
-
+<!-- MÉTODO -->
+<section class="section">
+  <div class="section-title">NOSSO MÉTODO</div>
+  <div class="grid">
     <div class="card">
       <h3>Estratégia</h3>
-      <p>Direção clara para crescimento com base em decisões estruturadas.</p>
+      <p>Definimos direção clara para crescimento.</p>
     </div>
-
     <div class="card">
       <h3>Pessoas</h3>
-      <p>Organização e alinhamento do time para performance real.</p>
+      <p>Alinhamos e organizamos seu time.</p>
     </div>
-
     <div class="card">
       <h3>Execução</h3>
-      <p>Transformamos planejamento em resultado prático.</p>
+      <p>Transformamos planejamento em resultado.</p>
     </div>
-
   </div>
-
 </section>
 
 <!-- FRASE -->
 <section class="statement">
-  <h2>
-    O problema raramente é capacidade.<br>
-    Na maioria das vezes, é falta de estrutura.
-  </h2>
+  <h2>Empresas estruturadas crescem com consistência. As outras travam.</h2>
 </section>
 
-<!-- CTA FINAL -->
+<!-- CTA -->
 <section class="cta-final">
-  <h2>Evolua sua empresa para o próximo nível.</h2>
+  <h2>Pronto para destravar sua empresa?</h2>
   <a href="#" class="cta">Agendar conversa</a>
 </section>
 
