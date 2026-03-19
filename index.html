@@ -17,6 +17,7 @@ body{
   color:#1a1a1a;
 }
 
+/* NAV */
 nav{
   display:flex;
   justify-content:space-between;
@@ -35,6 +36,7 @@ nav a{
   text-decoration:none;
 }
 
+/* HERO */
 .hero{
   display:grid;
   grid-template-columns:1.2fr 1fr;
@@ -50,7 +52,6 @@ nav a{
 .hero-text h1{
   font-family:'Playfair Display';
   font-size:58px;
-  line-height:1.2;
   margin-bottom:25px;
 }
 
@@ -67,21 +68,6 @@ nav a{
   border-radius:8px;
   color:white;
   text-decoration:none;
-  font-weight:500;
-}
-
-/* WHATSAPP FLOAT */
-.whatsapp{
-  position:fixed;
-  bottom:20px;
-  right:20px;
-  background:#25D366;
-  color:white;
-  padding:14px 18px;
-  border-radius:50px;
-  text-decoration:none;
-  font-size:14px;
-  box-shadow:0 10px 25px rgba(0,0,0,0.2);
 }
 
 /* IMAGEM */
@@ -120,24 +106,6 @@ nav a{
   border-radius:12px;
   background:#fff;
   box-shadow:0 15px 40px rgba(0,0,0,0.08);
-  transition:.3s;
-}
-
-.card:hover{
-  transform:translateY(-6px);
-}
-
-.dark .card{
-  background:#1a1a1a;
-  color:white;
-}
-
-.card p{
-  color:#666;
-}
-
-.dark .card p{
-  color:#bbb;
 }
 
 /* FRASE */
@@ -153,7 +121,6 @@ nav a{
   font-size:38px;
   max-width:900px;
   margin:auto;
-  line-height:1.5;
 }
 
 /* CTA FINAL */
@@ -163,23 +130,81 @@ nav a{
   text-align:center;
 }
 
-.cta-final h2{
-  font-size:36px;
-  margin-bottom:30px;
-}
-
 /* FOOTER */
 footer{
   padding:40px 80px;
   color:#aaa;
   background:#0f0f0f;
 }
+
+/* WHATS */
+.whatsapp{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#25D366;
+  color:white;
+  padding:14px 18px;
+  border-radius:50px;
+  text-decoration:none;
+}
+
+/* ✨ ANIMAÇÃO */
+.reveal{
+  opacity:0;
+  transform:translateY(40px);
+  transition:all 0.8s ease;
+}
+
+.reveal.active{
+  opacity:1;
+  transform:translateY(0);
+}
+
+/* 📱 MOBILE */
+@media(max-width:768px){
+
+  nav{padding:20px;}
+
+  .hero{
+    grid-template-columns:1fr;
+  }
+
+  .hero-text{
+    padding:60px 20px;
+  }
+
+  .hero-text h1{
+    font-size:32px;
+  }
+
+  .hero-image{
+    height:300px;
+  }
+
+  .section{
+    padding:60px 20px;
+  }
+
+  .grid{
+    grid-template-columns:1fr;
+  }
+
+  .statement{
+    padding:80px 20px;
+  }
+
+  .statement h2{
+    font-size:26px;
+  }
+
+}
 </style>
 </head>
 
 <body>
 
-<nav>
+<nav class="reveal">
   <div class="logo">Oren</div>
   <div>
     <a href="index.html">Início</a>
@@ -188,7 +213,7 @@ footer{
 </nav>
 
 <section class="hero">
-  <div class="hero-text">
+  <div class="hero-text reveal">
     <h1>Empresas não travam por falta de estratégia.<br>Travam por falta de execução.</h1>
     <p>A Oren estrutura processos, pessoas e direção para destravar crescimento consistente.</p>
     <a href="https://wa.me/5511934514903" class="cta">Agendar conversa</a>
@@ -196,78 +221,78 @@ footer{
   <div class="hero-image"></div>
 </section>
 
-<section class="section">
+<section class="section reveal">
   <div class="section-title">CENÁRIOS COMUNS</div>
   <div class="grid">
     <div class="card">
       <h3>Falta de clareza na equipe</h3>
-      <p>Funções e responsabilidades não estão totalmente definidas, impactando a performance.</p>
+      <p>Funções e responsabilidades não estão totalmente definidas.</p>
     </div>
     <div class="card">
       <h3>Centralização excessiva</h3>
-      <p>Decisões e execução ainda dependem fortemente da liderança.</p>
+      <p>Decisões dependem muito da liderança.</p>
     </div>
     <div class="card">
       <h3>Dificuldade na execução</h3>
-      <p>O planejamento existe, mas nem sempre se traduz em resultados consistentes.</p>
+      <p>Planejamento nem sempre vira resultado.</p>
     </div>
   </div>
 </section>
 
-<section class="section dark">
+<section class="section dark reveal">
   <div class="section-title">ATUAÇÃO</div>
   <div class="grid">
     <div class="card">
-      <h3>Diagnóstico Organizacional</h3>
-      <p>Análise profunda da estrutura e funcionamento da empresa.</p>
+      <h3>Diagnóstico</h3>
+      <p>Análise da estrutura da empresa.</p>
     </div>
     <div class="card">
-      <h3>Estruturação Estratégica</h3>
-      <p>Organização interna para crescimento sustentável.</p>
+      <h3>Estruturação</h3>
+      <p>Organização para crescimento sustentável.</p>
     </div>
     <div class="card">
       <h3>Acompanhamento</h3>
-      <p>Direcionamento contínuo para decisões mais seguras.</p>
+      <p>Direção contínua.</p>
     </div>
   </div>
 </section>
 
-<section class="section">
-  <div class="section-title">MÉTODO</div>
-  <div class="grid">
-    <div class="card">
-      <h3>Estratégia</h3>
-      <p>Direção clara baseada em decisões estruturadas.</p>
-    </div>
-    <div class="card">
-      <h3>Pessoas</h3>
-      <p>Alinhamento do time para performance real.</p>
-    </div>
-    <div class="card">
-      <h3>Execução</h3>
-      <p>Transformação de planejamento em resultado.</p>
-    </div>
-  </div>
-</section>
-
-<section class="statement">
+<section class="statement reveal">
   <h2>
     O problema raramente é a falta de capacidade. 
     Na maioria das vezes, é falta de planejamento, alinhamento e organização.
   </h2>
 </section>
 
-<section class="cta-final">
+<section class="cta-final reveal">
   <h2>Pronto para destravar sua empresa?</h2>
   <a href="https://wa.me/5511934514903" class="cta">Agendar conversa</a>
 </section>
 
-<footer>
+<footer class="reveal">
   © 2026 Oren Consultoria
 </footer>
 
-<!-- BOTÃO WHATSAPP -->
 <a href="https://wa.me/5511934514903" class="whatsapp">WhatsApp</a>
+
+<!-- SCRIPT ANIMAÇÃO -->
+<script>
+function reveal(){
+  var reveals=document.querySelectorAll(".reveal");
+
+  for(var i=0;i<reveals.length;i++){
+    var windowHeight=window.innerHeight;
+    var elementTop=reveals[i].getBoundingClientRect().top;
+    var elementVisible=100;
+
+    if(elementTop < windowHeight - elementVisible){
+      reveals[i].classList.add("active");
+    }
+  }
+}
+
+window.addEventListener("scroll",reveal);
+</script>
 
 </body>
 </html>
