@@ -6,7 +6,7 @@
 
 <title>Oren Consultoria</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
 
 <style>
 * { margin:0; padding:0; box-sizing:border-box; }
@@ -27,12 +27,11 @@ nav {
 .logo {
   font-family:'Playfair Display';
   font-size:22px;
-  letter-spacing:1px;
 }
 
 nav a {
   margin-left:30px;
-  font-size:13px;
+  font-size:14px;
   color:#555;
   text-decoration:none;
 }
@@ -41,7 +40,7 @@ nav a {
 .hero {
   display:grid;
   grid-template-columns:1.2fr 1fr;
-  min-height:85vh;
+  min-height:90vh;
 }
 
 .hero-text {
@@ -53,15 +52,26 @@ nav a {
 
 .hero-text h1 {
   font-family:'Playfair Display';
-  font-size:52px;
+  font-size:56px;
   line-height:1.2;
   margin-bottom:25px;
 }
 
 .hero-text p {
-  font-size:17px;
+  font-size:18px;
   color:#555;
-  max-width:500px;
+  max-width:520px;
+  margin-bottom:30px;
+}
+
+.cta {
+  background:#f97316;
+  color:white;
+  padding:16px 28px;
+  border-radius:8px;
+  text-decoration:none;
+  font-size:14px;
+  width:max-content;
 }
 
 .hero-image {
@@ -72,46 +82,95 @@ nav a {
 
 /* SECTION */
 .section {
-  padding:100px 80px;
+  padding:120px 80px;
 }
 
 .section-title {
   font-size:12px;
   letter-spacing:2px;
   color:#999;
-  margin-bottom:50px;
+  margin-bottom:60px;
 }
 
 /* GRID */
 .grid {
   display:grid;
   grid-template-columns:repeat(3,1fr);
-  gap:60px;
+  gap:40px;
 }
 
-.item h3 {
+.card {
+  background:white;
+  padding:30px;
+  border-radius:12px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.04);
+  transition:0.3s;
+}
+
+.card:hover {
+  transform:translateY(-5px);
+}
+
+.card h3 {
   font-size:18px;
   margin-bottom:10px;
 }
 
-.item p {
+.card p {
   color:#666;
   font-size:14px;
   line-height:1.6;
 }
 
-/* BLOCO DIFERENTE */
-.statement {
+/* DOR */
+.problem {
+  background:#ffffff;
   padding:120px 80px;
+}
+
+.problem h2 {
+  font-family:'Playfair Display';
+  font-size:36px;
+  margin-bottom:60px;
+}
+
+/* PILARES */
+.pilares {
+  padding:120px 80px;
+}
+
+.pilares-grid {
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:40px;
+}
+
+/* STATEMENT */
+.statement {
+  padding:140px 80px;
   background:#1a1a1a;
   color:white;
+  text-align:center;
 }
 
 .statement h2 {
   font-family:'Playfair Display';
-  font-size:36px;
+  font-size:38px;
   max-width:700px;
+  margin:auto;
   line-height:1.4;
+}
+
+/* CTA FINAL */
+.cta-final {
+  padding:120px 80px;
+  text-align:center;
+}
+
+.cta-final h2 {
+  font-family:'Playfair Display';
+  font-size:36px;
+  margin-bottom:30px;
 }
 
 /* FOOTER */
@@ -128,70 +187,85 @@ footer {
 <nav>
   <div class="logo">Oren</div>
   <div>
-    <a href="index.html">Início</a>
-    <a href="sobre.html">Sobre</a>
+    <a href="#">Início</a>
+    <a href="#">Sobre</a>
   </div>
 </nav>
 
 <section class="hero">
 
   <div class="hero-text">
-    <h1>Estruturar antes de crescer é o que sustenta empresas no longo prazo.</h1>
+    <h1>Empresas não travam por falta de estratégia.<br>Travam por falta de execução.</h1>
     <p>
-      A Oren atua na base das organizações, organizando processos, definindo diretrizes
-      e construindo estruturas que permitem crescimento consistente e sustentável.
+      A Oren estrutura processos, pessoas e direção para empresas crescerem com consistência.
     </p>
+    <a href="#" class="cta">Agendar conversa</a>
   </div>
 
   <div class="hero-image"></div>
 
 </section>
 
-<section class="section">
-
-  <div class="section-title">ATUAÇÃO</div>
+<!-- DOR -->
+<section class="problem">
+  <h2>Se você sente que sua empresa não evolui, geralmente é por isso:</h2>
 
   <div class="grid">
-
-    <div class="item">
-      <h3>Diagnóstico Organizacional</h3>
-      <p>Análise profunda da estrutura e funcionamento da empresa.</p>
+    <div class="card">
+      <h3>O time não entrega</h3>
+      <p>Falta alinhamento, clareza e responsabilidade nas funções.</p>
     </div>
 
-    <div class="item">
-      <h3>Estruturação Estratégica</h3>
-      <p>Organização interna com foco em crescimento sustentável.</p>
+    <div class="card">
+      <h3>Tudo depende de você</h3>
+      <p>O negócio não anda sem sua presença direta.</p>
     </div>
 
-    <div class="item">
-      <h3>Acompanhamento</h3>
-      <p>Direcionamento contínuo para decisões mais seguras.</p>
+    <div class="card">
+      <h3>Estratégia não sai do papel</h3>
+      <p>Planejamento existe, mas execução não acontece.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PILARES -->
+<section class="pilares">
+
+  <div class="section-title">COMO ATUAMOS</div>
+
+  <div class="pilares-grid">
+
+    <div class="card">
+      <h3>Estratégia</h3>
+      <p>Direção clara para crescimento com base em decisões estruturadas.</p>
     </div>
 
-    <div class="item">
-      <h3>Governança</h3>
-      <p>Definição de políticas e organização de processos.</p>
+    <div class="card">
+      <h3>Pessoas</h3>
+      <p>Organização e alinhamento do time para performance real.</p>
     </div>
 
-    <div class="item">
-      <h3>Inclusão</h3>
-      <p>Diretrizes práticas alinhadas à responsabilidade social.</p>
-    </div>
-
-    <div class="item">
-      <h3>Imagem Institucional</h3>
-      <p>Posicionamento estratégico com base em ESG.</p>
+    <div class="card">
+      <h3>Execução</h3>
+      <p>Transformamos planejamento em resultado prático.</p>
     </div>
 
   </div>
 
 </section>
 
+<!-- FRASE -->
 <section class="statement">
   <h2>
-    Empresas que crescem sem estrutura eventualmente param.
-    Empresas estruturadas crescem com consistência.
+    O problema raramente é capacidade.<br>
+    Na maioria das vezes, é falta de estrutura.
   </h2>
+</section>
+
+<!-- CTA FINAL -->
+<section class="cta-final">
+  <h2>Evolua sua empresa para o próximo nível.</h2>
+  <a href="#" class="cta">Agendar conversa</a>
 </section>
 
 <footer>
