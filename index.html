@@ -6,130 +6,164 @@
 
 <title>Oren Consultoria</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 
 <style>
-* { margin:0; padding:0; box-sizing:border-box; }
+*{margin:0;padding:0;box-sizing:border-box;}
 
-body {
-  font-family:'Inter', sans-serif;
-  background:#f8f8f6;
+body{
+  font-family:'Inter',sans-serif;
+  background:#0f0f0f;
   color:#1a1a1a;
 }
 
 /* NAV */
-nav {
+nav{
   display:flex;
   justify-content:space-between;
   padding:30px 80px;
+  background:white;
 }
 
-.logo {
+.logo{
   font-family:'Playfair Display';
   font-size:22px;
-  letter-spacing:1px;
 }
 
-nav a {
+nav a{
   margin-left:30px;
-  font-size:13px;
   color:#555;
   text-decoration:none;
 }
 
 /* HERO */
-.hero {
+.hero{
   display:grid;
   grid-template-columns:1.2fr 1fr;
-  min-height:85vh;
+  min-height:90vh;
+  background:linear-gradient(120deg,#111,#1a1a1a);
+  color:white;
 }
 
-.hero-text {
+.hero-text{
   padding:120px 80px;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
 }
 
-.hero-text h1 {
+.hero-text h1{
   font-family:'Playfair Display';
-  font-size:52px;
+  font-size:58px;
   line-height:1.2;
   margin-bottom:25px;
 }
 
-.hero-text p {
-  font-size:17px;
-  color:#555;
-  max-width:500px;
+.hero-text p{
+  font-size:18px;
+  color:#ccc;
   margin-bottom:30px;
+  max-width:500px;
 }
 
-.cta {
+.cta{
   background:#f97316;
+  padding:16px 30px;
+  border-radius:8px;
   color:white;
-  padding:12px 22px;
-  border-radius:6px;
   text-decoration:none;
-  font-size:13px;
-  width:max-content;
+  font-weight:500;
 }
 
-.hero-image {
+.hero-image{
   background:url('https://images.unsplash.com/photo-1507679799987-c73779587ccf');
   background-size:cover;
-  background-position:center;
 }
 
-/* SECTION */
-.section {
-  padding:100px 80px;
+/* SEÇÕES */
+.section{
+  padding:120px 80px;
+  background:white;
 }
 
-.section-title {
+.dark{
+  background:#111;
+  color:white;
+}
+
+.section-title{
   font-size:12px;
   letter-spacing:2px;
-  color:#999;
   margin-bottom:50px;
+  opacity:.6;
 }
 
 /* GRID */
-.grid {
+.grid{
   display:grid;
   grid-template-columns:repeat(3,1fr);
-  gap:60px;
+  gap:30px;
 }
 
-.item h3 {
-  font-size:18px;
-  margin-bottom:10px;
+.card{
+  padding:30px;
+  border-radius:12px;
+  background:#fff;
+  box-shadow:0 15px 40px rgba(0,0,0,0.08);
+  transition:.3s;
 }
 
-.item p {
-  color:#666;
-  font-size:14px;
-  line-height:1.6;
+.card:hover{
+  transform:translateY(-6px);
 }
 
-/* BLOCO DIFERENTE */
-.statement {
-  padding:120px 80px;
+.dark .card{
   background:#1a1a1a;
   color:white;
 }
 
-.statement h2 {
+.card h3{
+  margin-bottom:10px;
+}
+
+.card p{
+  font-size:14px;
+  color:#666;
+}
+
+.dark .card p{
+  color:#bbb;
+}
+
+/* FRASE */
+.statement{
+  padding:140px 80px;
+  background:linear-gradient(120deg,#f97316,#ea580c);
+  color:white;
+  text-align:center;
+}
+
+.statement h2{
   font-family:'Playfair Display';
+  font-size:40px;
+  max-width:800px;
+  margin:auto;
+}
+
+/* CTA FINAL */
+.cta-final{
+  padding:120px 80px;
+  background:white;
+  text-align:center;
+}
+
+.cta-final h2{
   font-size:36px;
-  max-width:700px;
-  line-height:1.4;
+  margin-bottom:30px;
 }
 
 /* FOOTER */
-footer {
+footer{
   padding:40px 80px;
-  font-size:13px;
-  color:#777;
+  color:#aaa;
+  background:#0f0f0f;
 }
 </style>
 </head>
@@ -139,71 +173,86 @@ footer {
 <nav>
   <div class="logo">Oren</div>
   <div>
-    <a href="index.html">Início</a>
-    <a href="sobre.html">Sobre</a>
+    <a href="#">Início</a>
+    <a href="#">Sobre</a>
   </div>
 </nav>
 
 <section class="hero">
-
   <div class="hero-text">
-    <h1>Estrutura organizacional é o que sustenta o crescimento no longo prazo.</h1>
-    <p>
-      A Oren atua na base das organizações, organizando processos, definindo diretrizes
-      e criando estruturas que permitem crescimento consistente.
-    </p>
+    <h1>Empresas não travam por falta de estratégia.<br>Travam por falta de execução.</h1>
+    <p>A Oren organiza processos, pessoas e direção para destravar crescimento real.</p>
     <a href="#" class="cta">Agendar conversa</a>
   </div>
-
   <div class="hero-image"></div>
-
 </section>
 
+<!-- DOR -->
 <section class="section">
-
-  <div class="section-title">ATUAÇÃO</div>
-
+  <div class="section-title">PROBLEMAS COMUNS</div>
   <div class="grid">
-
-    <div class="item">
-      <h3>Diagnóstico Organizacional</h3>
-      <p>Análise da estrutura e funcionamento da empresa.</p>
+    <div class="card">
+      <h3>Equipe desorganizada</h3>
+      <p>Falta clareza nas funções e responsabilidades.</p>
     </div>
-
-    <div class="item">
-      <h3>Estruturação Estratégica</h3>
-      <p>Organização interna com foco em crescimento consistente.</p>
+    <div class="card">
+      <h3>Dono sobrecarregado</h3>
+      <p>Tudo depende de você para acontecer.</p>
     </div>
-
-    <div class="item">
-      <h3>Acompanhamento</h3>
-      <p>Direcionamento contínuo para decisões mais seguras.</p>
+    <div class="card">
+      <h3>Falta de execução</h3>
+      <p>Planejamento existe, mas não vira resultado.</p>
     </div>
-
-    <div class="item">
-      <h3>Governança</h3>
-      <p>Definição de diretrizes e organização de processos.</p>
-    </div>
-
-    <div class="item">
-      <h3>Inclusão</h3>
-      <p>Estruturação de práticas alinhadas à responsabilidade social.</p>
-    </div>
-
-    <div class="item">
-      <h3>Imagem Institucional</h3>
-      <p>Posicionamento organizacional com base em consistência e reputação.</p>
-    </div>
-
   </div>
-
 </section>
 
+<!-- SERVIÇOS -->
+<section class="section dark">
+  <div class="section-title">O QUE FAZEMOS</div>
+  <div class="grid">
+    <div class="card">
+      <h3>Diagnóstico</h3>
+      <p>Análise profunda da estrutura da empresa.</p>
+    </div>
+    <div class="card">
+      <h3>Estruturação</h3>
+      <p>Organização estratégica para crescimento sustentável.</p>
+    </div>
+    <div class="card">
+      <h3>Acompanhamento</h3>
+      <p>Direção contínua para decisões mais assertivas.</p>
+    </div>
+  </div>
+</section>
+
+<!-- MÉTODO -->
+<section class="section">
+  <div class="section-title">NOSSO MÉTODO</div>
+  <div class="grid">
+    <div class="card">
+      <h3>Estratégia</h3>
+      <p>Definimos direção clara para crescimento.</p>
+    </div>
+    <div class="card">
+      <h3>Pessoas</h3>
+      <p>Alinhamos e organizamos seu time.</p>
+    </div>
+    <div class="card">
+      <h3>Execução</h3>
+      <p>Transformamos planejamento em resultado.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FRASE -->
 <section class="statement">
-  <h2>
-    Empresas que crescem com estrutura tomam decisões melhores
-    e evoluem com mais consistência ao longo do tempo.
-  </h2>
+  <h2>Empresas estruturadas crescem com consistência. As outras travam.</h2>
+</section>
+
+<!-- CTA -->
+<section class="cta-final">
+  <h2>Pronto para destravar sua empresa?</h2>
+  <a href="#" class="cta">Agendar conversa</a>
 </section>
 
 <footer>
