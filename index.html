@@ -13,7 +13,7 @@
 
 body{
   font-family:'Inter',sans-serif;
-  background:#0f0f0f;
+  background:#f5f5dc; /* 🔥 BEGE GLOBAL */
 }
 
 /* NAV */
@@ -21,7 +21,7 @@ nav{
   display:flex;
   justify-content:space-between;
   padding:30px 80px;
-  background:white;
+  background:#f5f5dc; /* 🔥 BEGE */
 }
 
 .logo{
@@ -34,41 +34,37 @@ nav{
   display:grid;
   grid-template-columns:1.2fr 1fr;
   min-height:90vh;
-  background:#111;
+  background:#f5f5dc; /* 🔥 BEGE */
 }
 
-/* 🔥 COR BEGE */
 .hero-text{
   padding:120px 80px;
-  color:#f5f5dc;
+  color:#1a1a1a; /* 🔥 TEXTO ESCURO AGORA */
 }
 
 .hero-text h1{
   font-family:'Playfair Display';
   font-size:52px;
   margin-bottom:25px;
-  line-height:1.2;
 }
 
 .hero-text p{
   font-size:18px;
-  color:#ddd;
+  color:#555;
   margin-bottom:30px;
 }
 
-/* BOTÃO */
 .cta{
   background:#f97316;
   padding:16px 30px;
   border-radius:8px;
   color:white;
   text-decoration:none;
-  display:inline-block;
 }
 
-/* IMAGEM NOVA */
+/* 🔥 SUA IMAGEM */
 .hero-image{
-  background:url('/mnt/data/download (2).jfif');
+  background:url('hero.jpg'); /* <-- SUA FOTO */
   background-size:cover;
   background-position:center;
 }
@@ -103,15 +99,6 @@ nav{
   border-radius:12px;
   background:#fff;
   box-shadow:0 15px 40px rgba(0,0,0,0.08);
-  transition:.3s;
-}
-
-.card:hover{
-  transform:translateY(-5px);
-}
-
-.dark .card{
-  background:#1a1a1a;
 }
 
 .card h3{
@@ -120,11 +107,6 @@ nav{
 
 .card p{
   color:#666;
-  line-height:1.5;
-}
-
-.dark .card p{
-  color:#bbb;
 }
 
 /* FRASE FINAL */
@@ -140,7 +122,6 @@ nav{
   font-size:34px;
   max-width:800px;
   margin:auto;
-  line-height:1.5;
 }
 
 /* CTA FINAL */
@@ -148,10 +129,6 @@ nav{
   padding:120px 80px;
   background:white;
   text-align:center;
-}
-
-.cta-final h2{
-  margin-bottom:30px;
 }
 
 /* WHATS */
@@ -170,7 +147,7 @@ nav{
 .reveal{
   opacity:0;
   transform:translateY(40px);
-  transition:all .8s ease;
+  transition:.8s;
 }
 
 .reveal.active{
@@ -210,7 +187,6 @@ nav{
   .statement{
     padding:80px 20px;
   }
-
 }
 </style>
 </head>
@@ -232,7 +208,6 @@ nav{
   <div class="hero-image"></div>
 </section>
 
-<!-- CENÁRIOS -->
 <section class="section reveal">
   <div class="section-title">CENÁRIOS COMUNS</div>
   <div class="grid">
@@ -251,7 +226,6 @@ nav{
   </div>
 </section>
 
-<!-- ATUAÇÃO -->
 <section class="section dark reveal">
   <div class="section-title">ATUAÇÃO</div>
   <div class="grid">
@@ -260,7 +234,7 @@ nav{
       <h3>Diagnóstico Organizacional</h3>
       <p>
       Mapeamento da estrutura empresarial<br><br>
-      Análise profunda da organização para compreender processos, responsabilidades, fluxos decisórios e nível de maturidade da gestão.
+      Análise profunda da organização para compreender processos e decisões.
       </p>
     </div>
 
@@ -268,7 +242,7 @@ nav{
       <h3>Estruturação Estratégica</h3>
       <p>
       Organização para crescimento sustentável<br><br>
-      Estruturação de estratégia, processos e governança para permitir crescimento com consistência, clareza operacional e alinhamento entre liderança e equipe.
+      Estruturação de estratégia e processos com alinhamento.
       </p>
     </div>
 
@@ -276,21 +250,19 @@ nav{
       <h3>Governança e Evolução Contínua</h3>
       <p>
       Fortalecimento institucional<br><br>
-      Acompanhamento estratégico com foco em melhoria contínua, desenvolvimento da gestão e incorporação de práticas modernas de governança e ESG.
+      Acompanhamento com foco em melhoria contínua e governança.
       </p>
     </div>
 
   </div>
 </section>
 
-<!-- FRASE FINAL -->
 <section class="statement reveal">
   <h2>
     Governança, clareza e responsabilidade são a base de organizações bem conduzidas.
   </h2>
 </section>
 
-<!-- CTA -->
 <section class="cta-final reveal">
   <h2>Pronto para organizarmos sua empresa?</h2>
   <a href="https://wa.me/5511934514903" class="cta">Agendar conversa</a>
