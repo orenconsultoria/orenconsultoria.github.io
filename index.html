@@ -30,12 +30,6 @@ nav{
   font-size:22px;
 }
 
-nav a{
-  margin-left:30px;
-  color:#555;
-  text-decoration:none;
-}
-
 /* HERO */
 .hero{
   display:grid;
@@ -51,7 +45,7 @@ nav a{
 
 .hero-text h1{
   font-family:'Playfair Display';
-  font-size:54px;
+  font-size:52px;
   line-height:1.2;
   margin-bottom:20px;
 }
@@ -60,7 +54,6 @@ nav a{
   font-size:18px;
   color:#555;
   margin-bottom:30px;
-  max-width:500px;
 }
 
 .cta{
@@ -69,7 +62,7 @@ nav a{
   border-radius:8px;
   color:white;
   text-decoration:none;
-  font-weight:500;
+  display:inline-block;
   transition:.3s;
 }
 
@@ -77,6 +70,7 @@ nav a{
   opacity:.85;
 }
 
+/* IMAGEM */
 .hero-image{
   background:url('https://images.unsplash.com/photo-1556761175-b413da4baf72');
   background-size:cover;
@@ -86,7 +80,7 @@ nav a{
 /* SECTIONS */
 .section{
   padding:100px 60px;
-  background:#ffffff;
+  background:#fff;
 }
 
 .dark{
@@ -155,11 +149,11 @@ nav a{
 }
 
 .cta-final h2{
-  font-size:32px;
+  font-size:30px;
   margin-bottom:25px;
 }
 
-/* WHATSAPP */
+/* WHATS */
 .whatsapp{
   position:fixed;
   bottom:20px;
@@ -169,7 +163,6 @@ nav a{
   padding:14px 20px;
   border-radius:50px;
   text-decoration:none;
-  font-weight:500;
 }
 
 /* ANIMAÇÃO */
@@ -183,7 +176,7 @@ nav a{
   nav{padding:20px;}
   .hero{grid-template-columns:1fr;}
   .hero-text{padding:60px 20px;}
-  .hero-text h1{font-size:34px;}
+  .hero-text h1{font-size:32px;}
   .hero-image{height:300px;}
   .section{padding:60px 20px;}
   .grid{grid-template-columns:1fr;}
@@ -201,7 +194,12 @@ nav a{
   <div class="hero-text">
     <h1>ESTRUTURA É O QUE TRANSFORMA ESFORÇO EM CRESCIMENTO.</h1>
     <p>A Oren organiza estratégia, pessoas e processos para construir crescimento consistente e sustentável.</p>
-    <a href="#" class="cta">Agendar conversa</a>
+
+    <!-- 🔥 AGORA VAI PRO EMAIL -->
+    <a href="mailto:consultoriaoren@gmail.com?subject=Agendar conversa&body=Olá, gostaria de agendar uma conversa com a Oren." class="cta">
+      Agendar conversa
+    </a>
+
   </div>
   <div class="hero-image"></div>
 </section>
@@ -215,11 +213,11 @@ nav a{
     </div>
     <div class="card">
       <h3>Centralização excessiva</h3>
-      <p>Decisões ainda dependem fortemente da liderança.</p>
+      <p>Decisões ainda dependem da liderança.</p>
     </div>
     <div class="card">
       <h3>Dificuldade na execução</h3>
-      <p>Planejamento existe, mas não se transforma em resultado.</p>
+      <p>Planejamento existe, mas não vira resultado.</p>
     </div>
   </div>
 </section>
@@ -227,18 +225,22 @@ nav a{
 <section class="section dark">
   <div class="section-title">ATUAÇÃO</div>
   <div class="grid">
+
     <div class="card">
       <h3>Diagnóstico Organizacional</h3>
-      <p>Mapeamento da estrutura empresarial com análise profunda de processos, responsabilidades e gestão.</p>
+      <p>Mapeamento da estrutura empresarial com análise profunda da organização.</p>
     </div>
+
     <div class="card">
       <h3>Estruturação Estratégica</h3>
-      <p>Organização da estratégia, processos e governança para crescimento sustentável.</p>
+      <p>Organização de estratégia, processos e governança para crescimento sustentável.</p>
     </div>
+
     <div class="card">
       <h3>Governança e Evolução Contínua</h3>
-      <p>Acompanhamento estratégico com foco em melhoria contínua e práticas modernas de gestão.</p>
+      <p>Acompanhamento com foco em melhoria contínua e boas práticas de gestão.</p>
     </div>
+
   </div>
 </section>
 
@@ -247,8 +249,13 @@ nav a{
 </section>
 
 <section class="cta-final">
-  <h2>Pronto para organizarmos sua empresa ?</h2>
-  <a href="#" class="cta">Agendar conversa</a>
+  <h2>Pronto para organizarmos sua empresa?</h2>
+
+  <!-- 🔥 EMAIL AQUI TAMBÉM -->
+  <a href="mailto:consultoriaoren@gmail.com?subject=Agendar conversa&body=Olá, gostaria de agendar uma conversa com a Oren." class="cta">
+    Agendar conversa
+  </a>
+
 </section>
 
 <a href="https://wa.me/5511934514903" class="whatsapp">WhatsApp</a>
