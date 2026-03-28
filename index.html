@@ -1,227 +1,297 @@
+
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Oren Consultoria</title>
-  <meta name="description" content="Consultoria empresarial em governança, estratégia e ESG." />
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    body {
-      font-family: Georgia, "Times New Roman", serif;
-      background-color: #f6f3ee;
-      color: #1f1f1f;
-      overflow-x: hidden;
-    }
+<title>Oren Consultoria</title>
 
-    .container {
-      max-width: 1400px;
-      margin: 0 auto;
-      padding: 40px 60px;
-    }
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 
-    header {
-      margin-bottom: 40px;
-    }
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
 
-    .brand {
-      font-size: 2.2rem;
-      font-weight: 600;
-      color: #16214a;
-    }
+body{
+  font-family:'Inter',sans-serif;
+  background:#f5f1ea;
+  color:#1a1a1a;
+}
 
-    .hero {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 50px;
-      min-height: 75vh;
-      flex-wrap: wrap;
-    }
+/* NAV */
+nav{
+  display:flex;
+  justify-content:space-between;
+  padding:25px 60px;
+  background:#f5f1ea;
+}
 
-    .hero-text {
-      flex: 1;
-      min-width: 320px;
-      max-width: 700px;
-    }
+.logo{
+  font-family:'Playfair Display';
+  font-size:22px;
+}
 
-    .hero-text h1 {
-      font-size: clamp(2.8rem, 6vw, 6rem);
-      line-height: 1.05;
-      font-weight: 700;
-      margin-bottom: 28px;
-      color: #111111;
-    }
+/* HERO */
+.hero{
+  display:grid;
+  grid-template-columns:1.2fr 1fr;
+  min-height:90vh;
+  background:#f5f1ea;
+}
 
-    .hero-text p {
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: clamp(1.2rem, 2vw, 1.8rem);
-      line-height: 1.5;
-      color: #555;
-      margin-bottom: 28px;
-      max-width: 650px;
-    }
+.hero-text{
+  padding:100px 60px;
+  animation:fadeUp 1s ease;
+}
 
-    .hero-tags {
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 1.3rem;
-      color: #6a6a6a;
-      letter-spacing: 0.5px;
-    }
+.hero-text h1{
+  font-family:'Playfair Display';
+  font-size:48px;
+  line-height:1.2;
+  margin-bottom:20px;
+}
 
-    .hero-image {
-      flex: 1;
-      min-width: 320px;
-      display: flex;
-      justify-content: center;
-    }
+.hero-text p{
+  font-size:18px;
+  color:#555;
+  margin-bottom:20px;
+  max-width:520px;
+}
 
-    .hero-image img {
-      width: 100%;
-      max-width: 760px;
-      border-radius: 6px;
-      object-fit: cover;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-    }
+.keywords{
+  font-size:14px;
+  letter-spacing:1px;
+  opacity:.7;
+  margin-bottom:30px;
+}
 
-    /* Logo fixo no canto superior direito */
-    .logo-fixed {
-      position: fixed;
-      top: 24px;
-      right: 24px;
-      z-index: 9999;
-    }
+.cta{
+  background:#f97316;
+  padding:16px 30px;
+  border-radius:8px;
+  color:white;
+  text-decoration:none;
+  display:inline-block;
+  transition:.3s;
+}
 
-    .logo-fixed img {
-      width: 110px;
-      max-width: 22vw;
-      height: auto;
-      opacity: 0.96;
-      background: rgba(255, 255, 255, 0.82);
-      padding: 10px 12px;
-      border-radius: 16px;
-      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-      backdrop-filter: blur(6px);
-      -webkit-backdrop-filter: blur(6px);
-      transition: transform 0.2s ease, opacity 0.2s ease;
-    }
+.cta:hover{
+  opacity:.85;
+}
 
-    .logo-fixed img:hover {
-      transform: scale(1.03);
-      opacity: 1;
-    }
+/* IMAGEM */
+.hero-image{
+  background:url('https://images.unsplash.com/photo-1556761175-b413da4baf72');
+  background-size:cover;
+  background-position:center;
+}
 
-    /* Botão WhatsApp */
-    .whatsapp-btn {
-      position: fixed;
-      right: 24px;
-      bottom: 24px;
-      background-color: #25d366;
-      color: white;
-      text-decoration: none;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 1.2rem;
-      font-weight: 600;
-      padding: 18px 26px;
-      border-radius: 999px;
-      box-shadow: 0 8px 22px rgba(37, 211, 102, 0.3);
-      z-index: 9999;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
+/* SECTIONS */
+.section{
+  padding:100px 60px;
+  background:#fff;
+}
 
-    .whatsapp-btn:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 10px 26px rgba(37, 211, 102, 0.35);
-    }
+.dark{
+  background:#1a1a1a;
+  color:white;
+}
 
-    @media (max-width: 900px) {
-      .container {
-        padding: 30px 22px;
-      }
+.section-title{
+  font-size:12px;
+  letter-spacing:2px;
+  margin-bottom:40px;
+  opacity:.6;
+}
 
-      .hero {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 30px;
-      }
+/* GRID */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:25px;
+}
 
-      .hero-text h1 {
-        font-size: clamp(2.4rem, 10vw, 4rem);
-      }
+.card{
+  padding:30px;
+  border-radius:12px;
+  background:#fff;
+  box-shadow:0 10px 30px rgba(0,0,0,0.08);
+  transition:.3s;
+}
 
-      .hero-text p {
-        font-size: 1.1rem;
-      }
+.card:hover{
+  transform:translateY(-5px);
+}
 
-      .hero-tags {
-        font-size: 1rem;
-      }
+.dark .card{
+  background:#2a2a2a;
+}
 
-      .logo-fixed {
-        top: 16px;
-        right: 16px;
-      }
+.card p{
+  color:#555;
+}
 
-      .logo-fixed img {
-        width: 85px;
-      }
+.dark .card p{
+  color:#bbb;
+}
 
-      .whatsapp-btn {
-        right: 16px;
-        bottom: 16px;
-        font-size: 1rem;
-        padding: 14px 20px;
-      }
-    }
-  </style>
+/* STATEMENT */
+.statement{
+  padding:120px 60px;
+  background:linear-gradient(120deg,#f97316,#ea580c);
+  color:white;
+  text-align:center;
+}
+
+.statement h2{
+  font-family:'Playfair Display';
+  font-size:34px;
+  max-width:800px;
+  margin:auto;
+}
+
+/* CTA FINAL */
+.cta-final{
+  padding:100px 60px;
+  text-align:center;
+}
+
+.cta-final h2{
+  font-size:30px;
+  margin-bottom:25px;
+}
+
+/* WHATS */
+.whatsapp{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#25D366;
+  color:white;
+  padding:14px 20px;
+  border-radius:50px;
+  text-decoration:none;
+}
+
+/* ANIMAÇÃO */
+@keyframes fadeUp{
+  from{opacity:0;transform:translateY(20px);}
+  to{opacity:1;transform:translateY(0);}
+}
+
+/* MOBILE */
+@media(max-width:900px){
+  nav{padding:20px;}
+  .hero{grid-template-columns:1fr;}
+  .hero-text{padding:60px 20px;}
+  .hero-text h1{font-size:32px;}
+  .hero-image{height:300px;}
+  .section{padding:60px 20px;}
+  .grid{grid-template-columns:1fr;}
+}
+</style>
 </head>
+
 <body>
 
-  <!-- Logo fixo -->
-  <div class="logo-fixed">
-    <img src="logo-oren.png" alt="Logo Oren Consultoria">
-  </div>
+<nav>
+<div class="logo">Oren Consultoria</div>
+</nav>
 
-  <div class="container">
-    <header>
-      <div class="brand">Oren Consultoria</div>
-    </header>
+<section class="hero">
 
-    <section class="hero">
-      <div class="hero-text">
-        <h1>
-          Organizamos empresas<br>
-          para crescer com<br>
-          estratégia, governança e<br>
-          responsabilidade.
-        </h1>
+<div class="hero-text">
 
-        <p>
-          A Oren apoia empresas na organização da gestão, definição de processos e
-          implementação de boas práticas de governança e ESG, criando bases sólidas
-          para um crescimento consistente.
-        </p>
+<h1>Organizamos empresas para crescer com estratégia, governança e responsabilidade.</h1>
 
-        <div class="hero-tags">
-          Governança • Estratégia • ESG
-        </div>
-      </div>
+<p>
+A Oren apoia empresas na organização da gestão, definição de processos e implementação de boas práticas de governança e ESG, criando bases sólidas para um crescimento consistente.
+</p>
 
-      <div class="hero-image">
-        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80" alt="Equipe em reunião no escritório">
-      </div>
-    </section>
-  </div>
+<div class="keywords">
+Governança • Estratégia • ESG
+</div>
 
-  <!-- Botão WhatsApp -->
-  <a class="whatsapp-btn" href="https://wa.me/5500000000000" target="_blank">
-    WhatsApp
-  </a>
+<a href="mailto:consultoriaoren@gmail.com?subject=Agendar conversa&body=Olá, gostaria de agendar uma conversa com a Oren." class="cta">
+Agendar conversa
+</a>
+
+</div>
+
+<div class="hero-image"></div>
+
+</section>
+
+<section class="section">
+
+<div class="section-title">CENÁRIOS COMUNS</div>
+
+<div class="grid">
+
+<div class="card">
+<h3>Falta de clareza na equipe</h3>
+<p>Funções e responsabilidades não estão claramente definidas dentro da empresa.</p>
+</div>
+
+<div class="card">
+<h3>Centralização de decisões</h3>
+<p>Grande parte das decisões depende apenas do fundador ou da liderança.</p>
+</div>
+
+<div class="card">
+<h3>Dificuldade de execução</h3>
+<p>Planejamento existe, mas não se transforma em processos e resultados consistentes.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="section dark">
+
+<div class="section-title">ATUAÇÃO</div>
+
+<div class="grid">
+
+<div class="card">
+<h3>Diagnóstico Organizacional</h3>
+<p>Análise da estrutura da empresa, fluxos de decisão, responsabilidades e processos existentes.</p>
+</div>
+
+<div class="card">
+<h3>Estruturação de Gestão</h3>
+<p>Organização de estratégia, processos e responsabilidades para melhorar a condução da empresa.</p>
+</div>
+
+<div class="card">
+<h3>Governança e ESG</h3>
+<p>Apoio na implementação de boas práticas de governança corporativa e princípios ESG.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="statement">
+
+<h2>
+Boas organizações são construídas com clareza de direção, responsabilidade e governança.
+</h2>
+
+</section>
+
+<section class="cta-final">
+
+<h2>Pronto para estruturar melhor sua empresa?</h2>
+
+<a href="mailto:consultoriaoren@gmail.com?subject=Agendar conversa&body=Olá, gostaria de agendar uma conversa com a Oren." class="cta">
+Agendar conversa
+</a>
+
+</section>
+
+<a href="https://wa.me/5511934514903" class="whatsapp">WhatsApp</a>
 
 </body>
 </html>
+```
