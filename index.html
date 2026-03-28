@@ -1,27 +1,227 @@
-<!-- Logo discreto no canto superior direito -->
-<div style="
-  position: fixed; 
-  top: 24px; 
-  right: 24px; 
-  z-index: 9999;
-">
-  <img 
-    src="logo-oren.png" 
-    alt="Logo Oren Consultoria" 
-    style="
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Oren Consultoria</title>
+  <meta name="description" content="Consultoria empresarial em governança, estratégia e ESG." />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      background-color: #f6f3ee;
+      color: #1f1f1f;
+      overflow-x: hidden;
+    }
+
+    .container {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 40px 60px;
+    }
+
+    header {
+      margin-bottom: 40px;
+    }
+
+    .brand {
+      font-size: 2.2rem;
+      font-weight: 600;
+      color: #16214a;
+    }
+
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 50px;
+      min-height: 75vh;
+      flex-wrap: wrap;
+    }
+
+    .hero-text {
+      flex: 1;
+      min-width: 320px;
+      max-width: 700px;
+    }
+
+    .hero-text h1 {
+      font-size: clamp(2.8rem, 6vw, 6rem);
+      line-height: 1.05;
+      font-weight: 700;
+      margin-bottom: 28px;
+      color: #111111;
+    }
+
+    .hero-text p {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: clamp(1.2rem, 2vw, 1.8rem);
+      line-height: 1.5;
+      color: #555;
+      margin-bottom: 28px;
+      max-width: 650px;
+    }
+
+    .hero-tags {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1.3rem;
+      color: #6a6a6a;
+      letter-spacing: 0.5px;
+    }
+
+    .hero-image {
+      flex: 1;
+      min-width: 320px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .hero-image img {
+      width: 100%;
+      max-width: 760px;
+      border-radius: 6px;
+      object-fit: cover;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    }
+
+    /* Logo fixo no canto superior direito */
+    .logo-fixed {
+      position: fixed;
+      top: 24px;
+      right: 24px;
+      z-index: 9999;
+    }
+
+    .logo-fixed img {
       width: 110px;
       max-width: 22vw;
       height: auto;
-      opacity: 0.92;
-      background: rgba(255, 255, 255, 0.78);
+      opacity: 0.96;
+      background: rgba(255, 255, 255, 0.82);
       padding: 10px 12px;
       border-radius: 16px;
       box-shadow: 0 6px 18px rgba(0,0,0,0.08);
       backdrop-filter: blur(6px);
       -webkit-backdrop-filter: blur(6px);
       transition: transform 0.2s ease, opacity 0.2s ease;
-    "
-    onmouseover="this.style.opacity='1'; this.style.transform='scale(1.03)'"
-    onmouseout="this.style.opacity='0.92'; this.style.transform='scale(1)'"
-  >
-</div>
+    }
+
+    .logo-fixed img:hover {
+      transform: scale(1.03);
+      opacity: 1;
+    }
+
+    /* Botão WhatsApp */
+    .whatsapp-btn {
+      position: fixed;
+      right: 24px;
+      bottom: 24px;
+      background-color: #25d366;
+      color: white;
+      text-decoration: none;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1.2rem;
+      font-weight: 600;
+      padding: 18px 26px;
+      border-radius: 999px;
+      box-shadow: 0 8px 22px rgba(37, 211, 102, 0.3);
+      z-index: 9999;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .whatsapp-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 26px rgba(37, 211, 102, 0.35);
+    }
+
+    @media (max-width: 900px) {
+      .container {
+        padding: 30px 22px;
+      }
+
+      .hero {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+      }
+
+      .hero-text h1 {
+        font-size: clamp(2.4rem, 10vw, 4rem);
+      }
+
+      .hero-text p {
+        font-size: 1.1rem;
+      }
+
+      .hero-tags {
+        font-size: 1rem;
+      }
+
+      .logo-fixed {
+        top: 16px;
+        right: 16px;
+      }
+
+      .logo-fixed img {
+        width: 85px;
+      }
+
+      .whatsapp-btn {
+        right: 16px;
+        bottom: 16px;
+        font-size: 1rem;
+        padding: 14px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Logo fixo -->
+  <div class="logo-fixed">
+    <img src="logo-oren.png" alt="Logo Oren Consultoria">
+  </div>
+
+  <div class="container">
+    <header>
+      <div class="brand">Oren Consultoria</div>
+    </header>
+
+    <section class="hero">
+      <div class="hero-text">
+        <h1>
+          Organizamos empresas<br>
+          para crescer com<br>
+          estratégia, governança e<br>
+          responsabilidade.
+        </h1>
+
+        <p>
+          A Oren apoia empresas na organização da gestão, definição de processos e
+          implementação de boas práticas de governança e ESG, criando bases sólidas
+          para um crescimento consistente.
+        </p>
+
+        <div class="hero-tags">
+          Governança • Estratégia • ESG
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80" alt="Equipe em reunião no escritório">
+      </div>
+    </section>
+  </div>
+
+  <!-- Botão WhatsApp -->
+  <a class="whatsapp-btn" href="https://wa.me/5500000000000" target="_blank">
+    WhatsApp
+  </a>
+
+</body>
+</html>
