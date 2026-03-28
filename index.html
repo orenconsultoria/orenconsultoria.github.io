@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -16,6 +15,30 @@ body{
   font-family:'Inter',sans-serif;
   background:#f5f1ea;
   color:#1a1a1a;
+}
+
+/* LOGO FIXO SUTIL */
+.corner-logo{
+  position:fixed;
+  top:18px;
+  right:18px;
+  z-index:999;
+  width:120px;
+  opacity:.88;
+  pointer-events:none;
+  background:rgba(255,255,255,0.28);
+  backdrop-filter:blur(4px);
+  -webkit-backdrop-filter:blur(4px);
+  padding:6px 10px;
+  border-radius:14px;
+  box-shadow:0 8px 24px rgba(0,0,0,0.06);
+  transition:.3s ease;
+}
+
+.corner-logo img{
+  width:100%;
+  height:auto;
+  display:block;
 }
 
 /* NAV */
@@ -171,6 +194,7 @@ nav{
   padding:14px 20px;
   border-radius:50px;
   text-decoration:none;
+  z-index:998;
 }
 
 /* ANIMAÇÃO */
@@ -188,11 +212,25 @@ nav{
   .hero-image{height:300px;}
   .section{padding:60px 20px;}
   .grid{grid-template-columns:1fr;}
+
+  .corner-logo{
+    width:88px;
+    top:12px;
+    right:12px;
+    padding:4px 8px;
+    border-radius:12px;
+    opacity:.82;
+  }
 }
 </style>
 </head>
 
 <body>
+
+<!-- LOGO FIXO NO CANTO -->
+<div class="corner-logo">
+  <img src="data:image/png;base64,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" alt="Logo Oren Consultoria">
+</div>
 
 <nav>
 <div class="logo">Oren Consultoria</div>
@@ -294,4 +332,3 @@ Agendar conversa
 
 </body>
 </html>
-```
